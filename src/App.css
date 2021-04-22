@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar css */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    background: #e8e8e8;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-menu{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dot{
+    visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 768px) {
+    
+    i{
+        background-color: gray;
+        width: 32px;
+        height: 4px;
+        margin: 4px;
+        border-radius: 2px;
+    }
+    .dot{
+        visibility: visible;
+    }
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* profile section */
+.sectin-profile{
+    align-items: center;
+    
+}
+
+.img-center{
+    border-radius: 50%;
+    display: block;
+    width: auto;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.verify{
+    text-align: center;
+    color: green;
+}
+
+.rating{
+    text-align: center;
+}
+
+
+/* image-section css */
+.img-card{
+    background: lightgray;
+    height: auto;
+}
+
+.img-size{
+    margin: 15px;
+    padding: 5px;
+    width: auto;
+    height: 100px;
+    border-radius: 10%;
+}
+
+
+/* Adrress section css */
+.address{
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .address{
+        width: 100%;
+        height: auto;
+
+    }
 }
